@@ -1,0 +1,224 @@
+favicon: https://cdn.zengjunyin.com/image/basic/favicon-dog.svg
+
+apple_touch_icon: https://cdn.zengjunyin.com/image/basic/favicon-dog.svg
+
+force_https: true
+
+code:
+  highlight:
+    highlightjs:
+      style: "Routeros"
+      style_dark: "Lioshi"
+
+fun_features:
+  typing:
+    enable: false
+  anchorjs:
+    placement: right
+    visible: always
+  progressbar:
+    color: "#eea2a4"
+
+dark_mode:
+  default: dark
+
+color:
+  body_bg_color: "#f2f2f2"
+  body_bg_color_dark: "#232323"
+
+  navbar_bg_color: "#fff"
+  navbar_bg_color_dark: "#464646"
+
+  navbar_text_color: "#373e4a"
+  navbar_text_color_dark: "#d8d8d8"
+
+  subtitle_color: "#979898"
+  subtitle_color_dark: "#d8d8d8"
+
+  text_color: "#373e4a"
+  text_color_dark: "#d8d8d8"
+
+  sec_text_color: "#979898"
+  sec_text_color_dark: "#979898"
+
+  board_color: "#fff"
+  board_color_dark: "#464646"
+
+  post_text_color: "#373e4a"
+  post_text_color_dark: "#d8d8d8"
+
+  post_heading_color: "#373e4a"
+  post_heading_color_dark: "#d8d8d8"
+
+  post_link_color: "#eea2a4"
+  post_link_color_dark: "#f1939c"
+
+  link_hover_color: "#f07c82"
+  link_hover_color_dark: "#f07c82"
+
+  link_hover_bg_color: "rgba(0,0,0,0.1)"
+  link_hover_bg_color_dark: "rgba(0,0,0,0.1)"
+
+  line_color: "#979898"
+  line_color_dark: "#979898"
+
+  scrollbar_color: "#eea2a4"
+  scrollbar_color_dark: "#eea2a4"
+
+  scrollbar_hover_color: "#f07c82"
+  scrollbar_hover_color_dark: "#f07c82"
+
+  button_bg_color: "transparent"
+  button_bg_color_dark: "transparent"
+
+  button_hover_bg_color: "#f2f3f5"
+  button_hover_bg_color_dark: "#46647e"
+
+font:
+  font_size: 17px
+  font_family: MiSans, Roboto, Noto Sans SC, sans-serif;
+  letter_spacing: 0.06em
+
+custom_css: css/hexo.css
+
+lazyload:
+  loading_img: https://cdn.zengjunyin.com/image/hexo/loading.gif
+  onlypost: true
+
+iconfont: https://at.alicdn.com/t/c/font_3048099_rhlhyf4tj8m.css
+
+navbar:
+  blog_title: "GinMiraing"
+  menu:
+    - { key: "浮生记", link: "/categories/浮生记/", icon: "iconfont icon-shenghuofuwu" }
+    - { key: "碎碎念", link: "/categories/碎碎念/", icon: "iconfont icon-shoucang" }
+    - { key: "笔记本", link: "/categories/笔记本/", icon: "iconfont icon-mianxing-shuben" }
+    - { key: "说说", link: "/daily/", icon: "iconfont icon-love" }
+    - { key: "about", link: "/about/", icon: "iconfont icon-user" }
+    - { key: "links", link: "/links/", icon: "iconfont icon-link_fill" }
+
+open_graph:
+  enable: false
+
+footer:
+  content: '
+    <a target="_blank" href="https://hexo.io" title="框架 Hexo"><img src="https://cdn.zengjunyin.com/image/hexo/Frame-Hexo-blue.svg"></a>
+    <a target="_blank" href="https://github.com/fluid-dev/hexo-theme-fluid" title="主题 Fluid"><img src="https://cdn.zengjunyin.com/image/hexo/Theme-Fluid-lightgrey.svg"></a>
+    <br/>
+    <p></p> 
+  '
+
+  beian:
+    enable: true
+    icp_text: 闽ICP备2021019269号
+
+index:
+  banner_img: https://cdn.zengjunyin.com/image/hexo/light-bg.jpg
+  banner_img_height: 50
+  slogan:
+    enable: true
+    text: "所念皆星河"
+  auto_excerpt:
+    enable: false
+  post_meta:
+    date: true
+    category: true
+    tag: false
+  post_sticky:
+    enable: true
+    icon: "iconfont icon-iconfonticonfonti2copy"
+
+post:
+  banner_img: https://cdn.zengjunyin.com/image/hexo/light-bg.jpg
+  banner_img_height: 50
+  meta:
+    author:
+      enable: true
+    wordcount:
+      enable: false
+    min2read:
+      enable: false
+  category_bar:
+    enable: false
+  toc:
+    enable: false
+  copyright:
+    enable: true
+    license: 'BY-NC'
+  image_zoom:
+    enable: true
+    img_url_replace: ['re:(@).*$', '']
+  comments:
+    enable: true
+    type: twikoo
+
+twikoo:
+  envId: https://twikoo.zengjunyin.com/
+  path: window.location.pathname
+
+archive:
+  banner_img: https://cdn.zengjunyin.com/image/hexo/light-bg.jpg
+  banner_img_height: 50
+
+category:
+  banner_img: https://cdn.zengjunyin.com/image/hexo/light-bg.jpg
+  banner_img_height: 50
+
+tag:
+  enable: false
+
+about:
+  banner_img: https://cdn.zengjunyin.com/image/hexo/light-bg.jpg
+  banner_img_height: 50
+  avatar: https://q2.qlogo.cn/headimg_dl?dst_uin=1159584691&spec=5
+  name: "胤"
+  intro: "所念皆星河"
+  icons:
+    - { class: "iconfont icon-github-fill", link: "https://github.com/GinMiraing", tip: "GitHub" }
+    - { class: "iconfont icon-mail_fill", link: "mailto:zengjunyin@foxmail.com", tip: "Mail" }
+
+page:
+  banner_img: https://cdn.zengjunyin.com/image/hexo/light-bg.jpg
+  banner_img_height: 50
+
+page404:
+  enable: false
+
+links:
+  banner_img: https://cdn.zengjunyin.com/image/hexo/light-bg.jpg
+  banner_img_height: 50
+  items:
+    - {
+      title: "山川行貉",
+      intro: "快让我在雪地上撒点儿野.",
+      link: "https://blog.scxho.cn",
+      avatar: "https://scxho.cn/1.png"
+    }
+    - {
+      title: "Vian",
+      intro: "想要的都拥有，得不到的都释怀...",
+      link: "https://vian.top",
+      avatar: "https://vian.top/avatar.ico"
+    }
+    - {
+      title: "山茶花舍",
+      intro: "吕楪在记录自己的生活",
+      link: "https://irithys.com",
+      avatar: "https://file.irithys.com/src/avatar/avatar.webp"
+    }
+    - {
+      title: "小予",
+      intro: "愿山野浓雾都有路灯风...",
+      link: "https://yvu.cc",
+      avatar: "https://cravatar.cn/avatar/9581bec449e7289c8b0a77f949d5bbea?s=100&d=mm&r=g"
+    }
+    - {
+      title: "频率",
+      intro: "风卷过的起点",
+      link: "https://pinlyu.com",
+      avatar: "https://pinlyu.com/resources/img/avatar.webp"
+    }
+  onerror_avatar: https://cdn.zengjunyin.com/image/hexo/linkavatar.png
+  comments:
+    enable: ture
+    type: twikoo

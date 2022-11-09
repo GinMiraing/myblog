@@ -1,0 +1,157 @@
+@font-face {
+    font-family: 'MiSans';
+    src: url('https://cdn.zengjunyin.com/font/MiSans-Medium.woff') format('woff');
+    font-display: swap;
+}
+
+/* 导航栏 */
+@media (min-width: 600px) {
+    .navbar.scrolling-navbar {
+        padding-top: 5px !important;;
+        padding-bottom: 5px !important;;
+    }
+}
+
+.navbar {
+    background-color: var(--navbar-bg-color) !important;;
+}
+
+/* 面板阴影 */
+#board {
+    box-shadow: 0 5px 11px 0 rgb(0 0 0 / 18%), 0 4px 15px 0 rgb(0 0 0 / 15%) !important;
+}
+
+/* 段落样式 */
+.markdown-body a:hover {
+    text-decoration: none !important;
+}
+
+.markdown-body {
+    line-height: 2 !important;
+}
+
+.markdown-body p {
+    text-align: justify;
+    margin-bottom: 25px !important;
+}
+
+/* 标签外挂 */
+.note-primary {
+    background-color: rgba(196,198,201,0.25) !important;
+    border-color: #eea2a4 !important;
+}
+
+.note *:last-child {
+    margin-bottom: 0 !important;
+}
+
+/* 表格居中 */
+.table_center {
+    width: auto;
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* 首页悬浮动画效果 */
+.index-card:hover .index-img img {
+    transition: 0.3s;
+    transform: scale(1.1);
+}
+
+.index-card:hover .index-info {
+    transition: 0.3s;
+    transform: translateX(20px) translateY(0);
+}
+
+.index-img img {
+    transition: 0.3s !important;
+    transform: scale(1.0);
+}
+
+.index-info {
+    transition: 0.3s;
+}
+
+@media (max-width: 750px) {
+    .index-card:hover .index-img img {
+        transform: none !important;
+    }
+    .index-card:hover .index-info {
+        transform: none !important;
+    }
+}
+
+#banner {
+    background-image: none !important;
+}
+
+#banner .mask {
+    background-color: transparent !important;
+}
+
+#web-bg {
+    position: fixed;
+    z-index: -999;
+    width: 100%;
+    height: 100%;
+    background-attachment: fixed;
+    transition: background-image 0.5s ease-in;
+    -moz-transition: background-image 0.5s ease-in;
+    -webkit-transition: background-image 0.5s ease-in;
+}
+
+#preloadbg {
+    background-image: url("https://cdn.zengjunyin.com/image/hexo/dark-bg.jpg");
+    background-image: url("https://cdn.zengjunyin.com/image/hexo/light-bg.jpg");
+}
+
+.bg-dark {
+    background-image: url("https://cdn.zengjunyin.com/image/hexo/dark-bg.jpg");
+}
+
+.bg-light {
+    background-image: url("https://cdn.zengjunyin.com/image/hexo/light-bg.jpg");
+}
+
+/* Twikoo 魔改 */
+.tk-nick-link:hover {
+    color: var(--link-hover-color) !important;
+}
+
+.tk-action-link {
+    color: var(--text-color) !important;
+}
+
+.tk-action-link:hover {
+    color: var(--link-hover-color) !important;
+}
+
+.tk-action-icon {
+    color: inherit !important;
+}
+
+.twikoo .el-input__inner:focus, .twikoo .el-textarea__inner:focus {
+    border-color: var(--link-hover-color) !important;
+}
+
+.twikoo .el-button:not(.el-button--primary):not(.el-button--text):active, .twikoo .el-button:not(.el-button--primary):not(.el-button--text):focus, .twikoo .el-button:not(.el-button--primary):not(.el-button--text):hover {
+    color: var(--link-hover-color) !important;
+    background-color: rgba(238,184,195,0.063) !important;
+    border-color: var(--scrollbar-hover-color) !important;
+}
+
+.el-button--primary {
+    background-color: var(--link-hover-color) !important;
+    border-color: var(--scrollbar-hover-color) !important;
+}
+
+.tk-icon.__comments {
+    color: inherit !important;
+}
+
+/* Twikoo 评论段落样式 */
+.tk-content p {
+    line-height: 1.6em;
+    text-align: justify;
+}
