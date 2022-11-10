@@ -5,11 +5,38 @@ comment: true
 ---
 
 <style>
+    #board {
+        background-color: transparent !important;
+        box-shadow: none !important;
+        padding: 0 !important;
+    }
     .tk-submit:nth-of-type(1) {
         display: none;
     }
+    .tk-comment {
+        margin-bottom: 2.5rem;
+        margin-top: 0;
+        background-color: var(--board-bg-color);
+        padding: 2em;
+        box-shadow: 0 5px 11px 0 rgb(0 0 0 / 18%), 0 4px 15px 0 rgb(0 0 0 / 15%);
+        border-radius: 0.5em;
+    }
+    .tk-replies > .tk-comment {
+        margin-bottom: 0;
+        padding: 0.5em;
+        box-shadow: none;
+        border-radius: 0;
+    }
+    .tk-comments-title {
+        display: none;
+    }
+    .tk-footer {
+        display: none;
+    }
+    .tk-expand {
+        background-color: var(--board-bg-color);
+        border-radius: 0.5em;
+        width: 25%;
+        margin: 0 auto;
+    }
 </style>
-
-<div style="text-align: center;">
-    <p style="font-size: 20px; font-weight: 500;">偶尔会出现图片点击无法放大的情况，刷新页面大概率可以解决~</p>
-</div>
