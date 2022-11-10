@@ -20,7 +20,7 @@ fun_features:
     color: "#eea2a4"
 
 dark_mode:
-  default: dark
+  default: auto
 
 color:
   body_bg_color: "#f2f2f2"
