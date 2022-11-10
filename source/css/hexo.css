@@ -91,22 +91,25 @@
     width: 100%;
     height: 100%;
     background-attachment: fixed;
-    transition: background-image 0.5s ease-in;
-    -moz-transition: background-image 0.5s ease-in;
-    -webkit-transition: background-image 0.5s ease-in;
-}
-
-#preloadbg {
-    background-image: url("https://cdn.zengjunyin.com/image/hexo/dark-bg.jpg");
     background-image: url("https://cdn.zengjunyin.com/image/hexo/light-bg.jpg");
+    transition: background-color 0.5s ease-in;
+    -moz-transition: background-color 0.5s ease-in;
+    -webkit-transition: background-color 0.5s ease-in;
 }
 
-.bg-dark {
-    background-image: url("https://cdn.zengjunyin.com/image/hexo/dark-bg.jpg");
+#web-mask {
+    position: fixed;
+    z-index: -888;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: background-color 0.5s ease-in;
+    -moz-transition: background-color 0.5s ease-in;
+    -webkit-transition: background-color 0.5s ease-in;
 }
 
-.bg-light {
-    background-image: url("https://cdn.zengjunyin.com/image/hexo/light-bg.jpg");
+[data-user-color-scheme="light"] #web-mask {
+    background-color: transparent;
 }
 
 /* Twikoo 魔改 */

@@ -11,7 +11,6 @@
   var defaultColorSchemaAttributeName = 'data-default-color-scheme';
   var colorToggleButtonSelector = '#color-toggle-btn';
   var colorToggleIconSelector = '#color-toggle-icon';
-  var webBackground = '#web-bg'; // 背景
 
   function setLS(k, v) {
     try {
@@ -118,10 +117,6 @@
     return 'icon-' + scheme;
   }
 
-  function getBackgroundClass(schema) {
-    return 'bg-' + schema;
-  }
-
   function toggleCustomColorSchema() {
     var currentSetting = getLS(colorSchemaStorageKey);
 
@@ -150,15 +145,6 @@
 
   function setButtonIcon(schema) {
     if (validColorSchemaKeys[schema]) {
-      // 切换背景
-      var bg = getBackgroundClass('dark');
-      if (schema) {
-        bg = getBackgroundClass(schema);
-      }
-      var bgElement = document.querySelector(webBackground);
-      if (bgElement) {
-        bgElement.setAttribute('class',bg);
-      }
       // 切换图标
       var icon = getIconClass('dark');
       if (schema) {
