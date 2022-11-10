@@ -20,6 +20,7 @@ var colorSchema = theme.dark_mode && theme.dark_mode.enable && theme.dark_mode.d
       <%- body %>
     <% } else { %>
       <div class="container nopadding-x-md">
+        <% if(!is_home()) { %>
         <div id="board"
           <%- banner_img_height >= 100 && theme.banner && theme.banner.parallax ? 'style="margin-top: 0"' : '' %>>
           <% if(page.layout === 'about') { %>
@@ -35,6 +36,9 @@ var colorSchema = theme.dark_mode && theme.dark_mode.enable && theme.dark_mode.d
             </div>
           </div>
         </div>
+        <% } else { %>
+          <%- body %>
+        <% } %>
       </div>
     <% } %>
 

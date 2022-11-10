@@ -80,14 +80,20 @@ Fluid.events = {
       return;
     }
     var board = jQuery('#board');
-    if (board.length === 0) {
+    var cardcontent = jQuery('#card-content');
+    if (board.length === 0 && cardcontent.length === 0) {
       return;
     }
     var posDisplay = false;
     var scrollDisplay = false;
     // Position
     var setTopArrowPos = function() {
-      var boardRight = board[0].getClientRects()[0].right;
+      var boardRight;
+      if (board.length === 0) {
+        boardRight = cardcontent[0].getClientRects()[0].right;
+      } else {
+        boardRight = board[0].getClientRects()[0].right;
+      }
       var bodyWidth = document.body.offsetWidth;
       var right = bodyWidth - boardRight;
       posDisplay = right >= 50;
@@ -99,7 +105,12 @@ Fluid.events = {
     setTopArrowPos();
     jQuery(window).resize(setTopArrowPos);
     // Display
-    var headerHeight = board.offset().top;
+    var headerHeight;
+    if (board.length === 0) {
+      headerHeight = cardcontent.offset().top;
+    } else {
+      headerHeight = board.offset().top;
+    }
     Fluid.utils.listenScroll(function() {
       var scrollHeight = document.body.scrollTop + document.documentElement.scrollTop;
       scrollDisplay = scrollHeight >= headerHeight;
