@@ -16,6 +16,7 @@ fun_features:
   anchorjs:
     placement: right
     visible: always
+    icon: "#"
   progressbar:
     color: "#eea2a4"
 
