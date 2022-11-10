@@ -10,6 +10,16 @@ comment: true
         box-shadow: none !important;
         padding: 0 !important;
     }
+    #comments {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .col-12 {
+        padding: 0 !important;
+    }
+    .col-md-10 {
+        padding: 0 !important;
+    }
     .tk-submit:nth-of-type(1) {
         display: none;
     }
