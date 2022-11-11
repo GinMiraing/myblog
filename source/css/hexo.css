@@ -77,6 +77,10 @@
     }
 }
 
+.navbar-brand:hover {
+    color: var(--link-hover-color) !important;
+}
+
 #banner {
     background-image: none !important;
 }
