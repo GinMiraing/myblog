@@ -16,19 +16,18 @@
                   if (showItem) {
                     showItem.style.display = 'flex';
                   }
-                }
+                };
+                var imgSelector_func = function() {
+                  var imgSelector = '#twikoo .tk-content img:not(.tk-owo-emotion)';
+                  if (imgSelector) {
+                    Fluid.plugins.imageCaption(imgSelector);
+                    Fluid.plugins.fancyBox(imgSelector);
+                  } else {
+                    setTimeout(imgSelector_func, 300);
+                  }
+                };
+                imgSelector_func();
               <% } %>
-              var imgSelector_func = function() {
-                var imgSelector = '#twikoo .tk-content img:not(.tk-owo-emotion)';
-                console.log(true)
-                if (imgSelector) {
-                  Fluid.plugins.imageCaption(imgSelector);
-                  Fluid.plugins.fancyBox(imgSelector);
-                } else {
-                  setTimeout(imgSelector_func, 300);
-                }
-              };
-              imgSelector_func();
             }
           }
         )
