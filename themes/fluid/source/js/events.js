@@ -170,6 +170,7 @@ Fluid.events = {
 |    |_____|   [___]'.__.'_/[___]'.__.;__]     |
 |                                              |
 |           Powered by Hexo x Fluid            |
+|           Modified by GinMiraing             |
 |         GitHub: https://git.io/JqpVD         |
 |                                              |
 ------------------------------------------------

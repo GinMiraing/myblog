@@ -9,9 +9,6 @@
             el: '#twikoo',
             path: '<%= theme.twikoo.path %>',
             onCommentLoaded: function() {
-              var imgSelector = '#twikoo .tk-content img:not(.tk-owo-emotion)';
-              Fluid.plugins.imageCaption(imgSelector);
-              Fluid.plugins.fancyBox(imgSelector);
               <% if (page.title === "自言自语") { %>
                 var iconNum = document.getElementsByClassName('tk-icon');
                 if (iconNum && iconNum.length > 0) {
@@ -21,6 +18,17 @@
                   }
                 }
               <% } %>
+              var imgSelector_func = function() {
+                var imgSelector = '#twikoo .tk-content img:not(.tk-owo-emotion)';
+                console.log(true)
+                if (imgSelector) {
+                  Fluid.plugins.imageCaption(imgSelector);
+                  Fluid.plugins.fancyBox(imgSelector);
+                } else {
+                  setTimeout(imgSelector_func, 300);
+                }
+              };
+              imgSelector_func();
             }
           }
         )
