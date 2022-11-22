@@ -219,6 +219,12 @@ links:
       link: "https://pinlyu.com",
       avatar: "https://pinlyu.com/resources/img/avatar.webp"
     }
+    - {
+      title: "林林杂语",
+      intro: "林林在无病呻吟",
+      link: "https://www.xiaozonglin.cn",
+      avatar: "https://thirdqq.qlogo.cn/g?b=sdk&k=BprL2nDXwddtThAKbAFBtw&kti=Y3tljAAAAAE&s=140&t=1644206293"
+    }
   onerror_avatar: https://cdn.zengjunyin.com/image/hexo/linkavatar.png
   comments:
     enable: ture
