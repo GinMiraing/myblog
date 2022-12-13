@@ -157,3 +157,26 @@
     line-height: 1.6em;
     text-align: justify;
 }
+
+/* 主页弹窗 */
+.iziToast {
+    font-family: inherit !important;
+    transition: background-color 0.2s ease-in-out;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.iziToast-body {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.iziToast-texts {
+    padding: 10px 15px !important;
+}
+
+.iziToast-message {
+    font-size: 16px !important;
+    line-height: 1.5em !important;
+    text-align: justify !important;
+}

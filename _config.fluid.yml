@@ -92,8 +92,8 @@ navbar:
   blog_title: "GinMiraing"
   menu:
     - { key: "浮生记", link: "/categories/浮生记/", icon: "iconfont icon-shenghuofuwu" }
-    - { key: "碎碎念", link: "/categories/碎碎念/", icon: "iconfont icon-shoucang" }
-    - { key: "笔记本", link: "/categories/笔记本/", icon: "iconfont icon-mianxing-shuben" }
+    # - { key: "碎碎念", link: "/categories/碎碎念/", icon: "iconfont icon-shoucang" }
+    - { key: "书影音", link: "/categories/书影音/", icon: "iconfont icon-mianxing-shuben" }
     - { key: "说说", link: "/daily/", icon: "iconfont icon-love" }
     - { key: "about", link: "/about/", icon: "iconfont icon-user" }
     - { key: "links", link: "/links/", icon: "iconfont icon-link_fill" }
@@ -205,7 +205,7 @@ links:
       title: "山茶花舍",
       intro: "吕楪在记录自己的生活",
       link: "https://irithys.com",
-      avatar: "https://file.irithys.com/src/avatar/avatar.webp"
+      avatar: "https://irithys.com/img/avatar_hubbf77efc6dc5667fd8ba4d90170d6399_48198_300x0_resize_q75_h2_box_2.webp"
     }
     - {
       title: "小予",

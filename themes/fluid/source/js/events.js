@@ -154,6 +154,23 @@ Fluid.events = {
     }
   },
 
+  registerIziToast: function() {
+    var iziToastState = sessionStorage.getItem('iziToastState');
+    if (iziToastState === null) {
+      iziToast.show({
+        message: '推荐使用高版本 Chrome 或 Edge 浏览本站...',
+        messageColor: 'var(--text-color)',
+        backgroundColor: 'var(--board-bg-color)',
+        close: false,
+        closeOnClick: true,
+        position: 'bottomLeft',
+        progressBarColor: '#eea2a4',
+        timeout: 6000,
+      });
+      sessionStorage.setItem('iziToastState', 'true');
+    };
+  },
+
   billboard: function() {
     if (!('console' in window)) {
       return;

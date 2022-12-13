@@ -8,6 +8,7 @@ Fluid.boot.registerEvents = function() {
   Fluid.events.registerParallaxEvent();
   Fluid.events.registerScrollDownArrowEvent();
   Fluid.events.registerScrollTopArrowEvent();
+  Fluid.events.registerIziToast();
   Fluid.events.registerImageLoadedEvent();
 };
 
