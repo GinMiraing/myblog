@@ -1,6 +1,6 @@
-favicon: https://cdn.zengjunyin.com/image/basic/favicon-dog.svg
+favicon: https://cdn.zengjunyin.com/image/icon/favicon.ico
 
-apple_touch_icon: https://cdn.zengjunyin.com/image/basic/favicon-dog.svg
+apple_touch_icon: https://cdn.zengjunyin.com/image/icon/apple-touch-icon.png
 
 force_https: true
 

@@ -30,3 +30,17 @@
 <% } %>
 
 <%- js_ex(theme.static_prefix.internal_js, 'boot.js') %>
+
+<script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function () {
+      navigator.serviceWorker.register('/sw.js')
+      .then(function (reg) {
+        console.log(reg.scope);
+      })
+      .catch(function (err) {
+        console.log('error: ', err);
+      });
+    });
+  }
+</script>
