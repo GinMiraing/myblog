@@ -1,4 +1,4 @@
-const version = 'offline-cache-v1'
+const version = 'offline-cache-v2'
 
 self.addEventListener('install', function (event) {
     event.waitUntil(self.skipWaiting());
