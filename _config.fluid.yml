@@ -92,7 +92,7 @@ navbar:
   blog_title: "GinMiraing"
   menu:
     - { key: "浮生记", link: "/categories/浮生记/", icon: "iconfont icon-shenghuofuwu" }
-    # - { key: "碎碎念", link: "/categories/碎碎念/", icon: "iconfont icon-shoucang" }
+    #- { key: "碎碎念", link: "/categories/碎碎念/", icon: "iconfont icon-shoucang" }
     - { key: "书影音", link: "/categories/书影音/", icon: "iconfont icon-mianxing-shuben" }
     - { key: "说说", link: "/daily/", icon: "iconfont icon-love" }
     - { key: "about", link: "/about/", icon: "iconfont icon-user" }
